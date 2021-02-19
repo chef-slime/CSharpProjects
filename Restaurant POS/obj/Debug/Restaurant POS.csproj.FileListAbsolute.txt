@@ -1,0 +1,10 @@
+C:\Users\td130\OneDrive\Documents\Restaurant POS\bin\Debug\Restaurant POS.exe.config
+C:\Users\td130\OneDrive\Documents\Restaurant POS\bin\Debug\Restaurant POS.exe
+C:\Users\td130\OneDrive\Documents\Restaurant POS\bin\Debug\Restaurant POS.pdb
+C:\Users\td130\OneDrive\Documents\Restaurant POS\obj\Debug\Restaurant POS.csprojAssemblyReference.cache
+C:\Users\td130\OneDrive\Documents\Restaurant POS\obj\Debug\Restaurant_POS.Form1.resources
+C:\Users\td130\OneDrive\Documents\Restaurant POS\obj\Debug\Restaurant_POS.Properties.Resources.resources
+C:\Users\td130\OneDrive\Documents\Restaurant POS\obj\Debug\Restaurant POS.csproj.GenerateResource.cache
+C:\Users\td130\OneDrive\Documents\Restaurant POS\obj\Debug\Restaurant POS.csproj.CoreCompileInputs.cache
+C:\Users\td130\OneDrive\Documents\Restaurant POS\obj\Debug\Restaurant POS.exe
+C:\Users\td130\OneDrive\Documents\Restaurant POS\obj\Debug\Restaurant POS.pdb
