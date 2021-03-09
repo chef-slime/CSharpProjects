@@ -14,7 +14,7 @@ namespace Restaurant_POS
             paymentpanel.BorderStyle = BorderStyle.None;
             foreach (DataGridViewColumn column in dataGridView1.Columns)
             {
-                    dataGridView1.Columns[column.Index].Width = 100;
+                dataGridView1.Columns[column.Index].Width = 100;
             }
         }
 
@@ -30,7 +30,7 @@ namespace Restaurant_POS
 
         private void AddCost()
         {
-            double tax = 0.06*Cost_of_Item();
+            double tax = 0.06 * Cost_of_Item();
             double total = Cost_of_Item() + tax;
 
             if (dataGridView1.Rows.Count > 0)
@@ -69,8 +69,6 @@ namespace Restaurant_POS
             {
                 MessageBox.Show(ex.Message);
             }
-
-            
         }
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
@@ -151,7 +149,7 @@ namespace Restaurant_POS
 
         private void paybtn_Click(object sender, EventArgs e)
         {
-            if(paycb.Text == "Cash")
+            if (paycb.Text == "Cash")
             {
                 Change();
             }
@@ -186,321 +184,322 @@ namespace Restaurant_POS
 
         private void btnKorokke_Click(object sender, EventArgs e)
         {
-            double cost = 1;
+            double cost = MenuDataset.ItemCost["Korokke"];
             foreach (DataGridViewRow row in dataGridView1.SelectedRows)
             {
-                if ((bool)(row.Cells[0].Value = "Korokke"))
+                if (row.Cells[0]?.Value?.ToString() == MenuDataset.Korokke && MenuDataset.ItemCost.TryGetValue(MenuDataset.Korokke, out cost))
                 {
                     row.Cells[1].Value = double.Parse((string)row.Cells[1].Value + 1);
                     row.Cells[1].Value = double.Parse((string)row.Cells[1].Value) * cost;
                 }
             }
-                dataGridView1.Rows.Add("Korokke", "1", cost);
+            dataGridView1.Rows.Add(MenuDataset.Korokke, "1", cost);
             AddCost();
 
         }
 
         private void btnGyoza_Click(object sender, EventArgs e)
         {
-            double cost = 3;
+            double cost = MenuDataset.ItemCost["Gyoza"];
 
             foreach (DataGridViewRow row in dataGridView1.SelectedRows)
             {
-                if ((bool)(row.Cells[0].Value = "Gyoza"))
+                if (row.Cells[0]?.Value?.ToString() == MenuDataset.Gyoza && MenuDataset.ItemCost.TryGetValue(MenuDataset.Gyoza, out cost))
                 {
                     row.Cells[1].Value = double.Parse((string)row.Cells[1].Value + 1);
                     row.Cells[1].Value = double.Parse((string)row.Cells[1].Value) * cost;
                 }
             }
-            dataGridView1.Rows.Add("Gyoza", "1", cost);
+            dataGridView1.Rows.Add(MenuDataset.Gyoza, "1", cost);
             AddCost();
         }
 
         private void btnBao_Click(object sender, EventArgs e)
         {
-            double cost = 3.75;
+            double cost = MenuDataset.ItemCost["Teriyaki Bao"];
 
             foreach (DataGridViewRow row in dataGridView1.SelectedRows)
             {
-                if ((bool)(row.Cells[0].Value = "Teriyaki Bao"))
+                if (row.Cells[0]?.Value?.ToString() == MenuDataset.Teriyaki_Bao && MenuDataset.ItemCost.TryGetValue(MenuDataset.Teriyaki_Bao, out cost))
                 {
                     row.Cells[1].Value = double.Parse((string)row.Cells[1].Value + 1);
                     row.Cells[1].Value = double.Parse((string)row.Cells[1].Value) * cost;
                 }
             }
-            dataGridView1.Rows.Add("Teriyaki Bao", "1", cost);
+            dataGridView1.Rows.Add(MenuDataset.Teriyaki_Bao, "1", cost);
             AddCost();
         }
 
         private void btnOkonomiyaki_Click(object sender, EventArgs e)
         {
-            double cost = 3.5;
+            double cost = MenuDataset.ItemCost["Okonomiyaki"];
 
             foreach (DataGridViewRow row in dataGridView1.SelectedRows)
             {
-                if ((bool)(row.Cells[0].Value = "Okonomiyaki"))
+                if (row.Cells[0]?.Value?.ToString() == MenuDataset.Okonomiyaki && MenuDataset.ItemCost.TryGetValue(MenuDataset.Okonomiyaki, out cost))
                 {
                     row.Cells[1].Value = double.Parse((string)row.Cells[1].Value + 1);
                     row.Cells[1].Value = double.Parse((string)row.Cells[1].Value) * cost;
                 }
             }
-            dataGridView1.Rows.Add("Okonomiyaki", "1", cost);
+            dataGridView1.Rows.Add(MenuDataset.Okonomiyaki, "1", cost);
             AddCost();
         }
 
         private void btnYakitori_Click(object sender, EventArgs e)
         {
-            double cost = 4;
+            double cost = MenuDataset.ItemCost["Yakitori"];
 
             foreach (DataGridViewRow row in dataGridView1.SelectedRows)
             {
-                if ((bool)(row.Cells[0].Value = "Yakitori"))
+                if (row.Cells[0]?.Value?.ToString() == MenuDataset.Yakitori && MenuDataset.ItemCost.TryGetValue(MenuDataset.Yakitori, out cost))
                 {
                     row.Cells[1].Value = double.Parse((string)row.Cells[1].Value + 1);
                     row.Cells[1].Value = double.Parse((string)row.Cells[1].Value) * cost;
                 }
             }
-            dataGridView1.Rows.Add("Yakitori", "1", cost);
+            dataGridView1.Rows.Add(MenuDataset.Yakitori, "1", cost);
             AddCost();
         }
 
         private void btnTonkotsuRamen_Click(object sender, EventArgs e)
         {
-            double cost = 6;
+            double cost = MenuDataset.ItemCost["Tonkotsu Ramen"];
 
             foreach (DataGridViewRow row in dataGridView1.SelectedRows)
             {
-                if ((bool)(row.Cells[0].Value = "Tonkotsu Ramen"))
+                if (row.Cells[0]?.Value?.ToString() == MenuDataset.Tonkotsu_Ramen && MenuDataset.ItemCost.TryGetValue(MenuDataset.Tonkotsu_Ramen, out cost))
                 {
                     row.Cells[1].Value = double.Parse((string)row.Cells[1].Value + 1);
                     row.Cells[1].Value = double.Parse((string)row.Cells[1].Value) * cost;
                 }
             }
-            dataGridView1.Rows.Add("Tonkotsu Ramen", "1", cost);
+            dataGridView1.Rows.Add(MenuDataset.Tonkotsu_Ramen, "1", cost);
             AddCost();
         }
 
         private void btnShoyuRamen_Click(object sender, EventArgs e)
         {
-            double cost = 7.5;
+            double cost = MenuDataset.ItemCost["Shoyu Ramen"];
 
             foreach (DataGridViewRow row in dataGridView1.SelectedRows)
             {
-                if ((bool)(row.Cells[0].Value = "Shoyu Ramen"))
+                if (row.Cells[0]?.Value?.ToString() == MenuDataset.Shoyu_Ramen && MenuDataset.ItemCost.TryGetValue(MenuDataset.Shoyu_Ramen, out cost))
                 {
                     row.Cells[1].Value = double.Parse((string)row.Cells[1].Value + 1);
                     row.Cells[1].Value = double.Parse((string)row.Cells[1].Value) * cost;
                 }
             }
-            dataGridView1.Rows.Add("Shoyu Ramen", "1", cost);
+            dataGridView1.Rows.Add(MenuDataset.Shoyu_Ramen, "1", cost);
             AddCost();
         }
 
         private void btnTonjiru_Click(object sender, EventArgs e)
         {
-            double cost = 3.5;
+            double cost = MenuDataset.ItemCost["Tonjiru"];
 
             foreach (DataGridViewRow row in dataGridView1.SelectedRows)
             {
-                if ((bool)(row.Cells[0].Value = "Tonjiru"))
+                if (row.Cells[0]?.Value?.ToString() == MenuDataset.Tonjiru && MenuDataset.ItemCost.TryGetValue(MenuDataset.Tonjiru, out cost))
                 {
                     row.Cells[1].Value = double.Parse((string)row.Cells[1].Value + 1);
                     row.Cells[1].Value = double.Parse((string)row.Cells[1].Value) * cost;
                 }
             }
-            dataGridView1.Rows.Add("Tonjiru", "1", cost);
+            dataGridView1.Rows.Add(MenuDataset.Tonjiru, "1", cost);
             AddCost();
         }
 
         private void btnCurry_Click(object sender, EventArgs e)
         {
-            double cost = 11.45;
+            double cost = MenuDataset.ItemCost["Katsu Curry"];
 
             foreach (DataGridViewRow row in dataGridView1.SelectedRows)
             {
-                if ((bool)(row.Cells[0].Value = "Katsu Curry"))
+                if (row.Cells[0]?.Value?.ToString() == MenuDataset.Katsu_Curry && MenuDataset.ItemCost.TryGetValue(MenuDataset.Katsu_Curry, out cost))
                 {
                     row.Cells[1].Value = double.Parse((string)row.Cells[1].Value + 1);
                     row.Cells[1].Value = double.Parse((string)row.Cells[1].Value) * cost;
                 }
             }
-            dataGridView1.Rows.Add("Katsu Curry", "1", cost);
+            dataGridView1.Rows.Add(MenuDataset.Katsu_Curry, "1", cost);
             AddCost();
         }
 
         private void btnOmurice_Click(object sender, EventArgs e)
         {
-            double cost = 5.28;
+            double cost = MenuDataset.ItemCost["Omurice"];
 
             foreach (DataGridViewRow row in dataGridView1.SelectedRows)
             {
-                if ((bool)(row.Cells[0].Value = "Omurice"))
+                if (row.Cells[0]?.Value?.ToString() == MenuDataset.Omurice && MenuDataset.ItemCost.TryGetValue(MenuDataset.Omurice, out cost))
                 {
                     row.Cells[1].Value = double.Parse((string)row.Cells[1].Value + 1);
                     row.Cells[1].Value = double.Parse((string)row.Cells[1].Value) * cost;
                 }
             }
-            dataGridView1.Rows.Add("Omurice", "1", cost);
+            dataGridView1.Rows.Add(MenuDataset.Omurice, "1", cost);
             AddCost();
         }
 
         private void btnDorayaki_Click(object sender, EventArgs e)
         {
-            double cost = 1.94;
+            double cost = MenuDataset.ItemCost["Dorayaki"];
 
             foreach (DataGridViewRow row in dataGridView1.SelectedRows)
             {
-                if ((bool)(row.Cells[0].Value = "Dorayaki"))
+                if (row.Cells[0]?.Value?.ToString() == MenuDataset.Dorayaki && MenuDataset.ItemCost.TryGetValue(MenuDataset.Dorayaki, out cost))
                 {
                     row.Cells[1].Value = double.Parse((string)row.Cells[1].Value + 1);
                     row.Cells[1].Value = double.Parse((string)row.Cells[1].Value) * cost;
                 }
             }
-            dataGridView1.Rows.Add("Dorayaki", "1", cost);
+            dataGridView1.Rows.Add(MenuDataset.Dorayaki, "1", cost);
             AddCost();
         }
 
         private void btnTaiyaki_Click(object sender, EventArgs e)
         {
-            double cost = 1.42;
+            double cost = MenuDataset.ItemCost["Taiyaki"];
 
             foreach (DataGridViewRow row in dataGridView1.SelectedRows)
             {
-                if ((bool)(row.Cells[0].Value = "Taiyaki"))
+                if (row.Cells[0]?.Value?.ToString() == MenuDataset.Taiyaki && MenuDataset.ItemCost.TryGetValue(MenuDataset.Taiyaki, out cost))
                 {
                     row.Cells[1].Value = double.Parse((string)row.Cells[1].Value + 1);
                     row.Cells[1].Value = double.Parse((string)row.Cells[1].Value) * cost;
                 }
             }
-            dataGridView1.Rows.Add("Taiyaki", "1", cost);
+            dataGridView1.Rows.Add(MenuDataset.Taiyaki, "1", cost);
             AddCost();
         }
 
         private void btnKakigori_Click(object sender, EventArgs e)
         {
-            double cost = 8.03;
+            double cost = MenuDataset.ItemCost["Kakigori"];
 
             foreach (DataGridViewRow row in dataGridView1.SelectedRows)
             {
-                if ((bool)(row.Cells[0].Value = "Kakigori"))
+                if (row.Cells[0]?.Value?.ToString() == MenuDataset.Kakigori && MenuDataset.ItemCost.TryGetValue(MenuDataset.Kakigori, out cost))
                 {
                     row.Cells[1].Value = double.Parse((string)row.Cells[1].Value + 1);
                     row.Cells[1].Value = double.Parse((string)row.Cells[1].Value) * cost;
                 }
             }
-            dataGridView1.Rows.Add("Kakigori", "1", cost);
+            dataGridView1.Rows.Add(MenuDataset.Kakigori, "1", cost);
             AddCost();
         }
 
         private void btnDaifuku_Click(object sender, EventArgs e)
         {
-            double cost = 3.5;
+            double cost = MenuDataset.ItemCost["Daifuku"];
 
             foreach (DataGridViewRow row in dataGridView1.SelectedRows)
             {
-                if ((bool)(row.Cells[0].Value = "Daifuku"))
+                if (row.Cells[0]?.Value?.ToString() == MenuDataset.Daifuku && MenuDataset.ItemCost.TryGetValue(MenuDataset.Daifuku, out cost))
                 {
                     row.Cells[1].Value = double.Parse((string)row.Cells[1].Value + 1);
                     row.Cells[1].Value = double.Parse((string)row.Cells[1].Value) * cost;
                 }
             }
-            dataGridView1.Rows.Add("Daifuku", "1", cost);
+            dataGridView1.Rows.Add(MenuDataset.Daifuku, "1", cost);
             AddCost();
         }
 
         private void btnDango_Click(object sender, EventArgs e)
         {
-            double cost = 6.52;
+            double cost = MenuDataset.ItemCost["Dango"];
 
             foreach (DataGridViewRow row in dataGridView1.SelectedRows)
             {
-                if ((bool)(row.Cells[0].Value = "Dango"))
+                if (row.Cells[0]?.Value?.ToString() == MenuDataset.Dango && MenuDataset.ItemCost.TryGetValue(MenuDataset.Dango, out cost))
                 {
                     row.Cells[1].Value = double.Parse((string)row.Cells[1].Value + 1);
                     row.Cells[1].Value = double.Parse((string)row.Cells[1].Value) * cost;
                 }
             }
-            dataGridView1.Rows.Add("Dango", "1", cost);
+            dataGridView1.Rows.Add(MenuDataset.Dango, "1", cost);
             AddCost();
         }
 
         private void btnCalpis_Click(object sender, EventArgs e)
         {
-            double cost = 6.18;
+            double cost = MenuDataset.ItemCost["Calpis"];
 
             foreach (DataGridViewRow row in dataGridView1.SelectedRows)
             {
-                if ((bool)(row.Cells[0].Value = "Calpis"))
+                if (row.Cells[0]?.Value?.ToString() == MenuDataset.Calpis && MenuDataset.ItemCost.TryGetValue(MenuDataset.Calpis, out cost))
                 {
                     row.Cells[1].Value = double.Parse((string)row.Cells[1].Value + 1);
                     row.Cells[1].Value = double.Parse((string)row.Cells[1].Value) * cost;
                 }
             }
-            dataGridView1.Rows.Add("Calpis", "1", cost);
+            dataGridView1.Rows.Add(MenuDataset.Calpis, "1", cost);
             AddCost();
         }
 
         private void btnRamune_Click(object sender, EventArgs e)
         {
-            double cost = 1.5;
+            double cost = MenuDataset.ItemCost["Ramune"];
 
             foreach (DataGridViewRow row in dataGridView1.SelectedRows)
             {
-                if ((bool)(row.Cells[0].Value = "Ramune"))
+                if (row.Cells[0]?.Value?.ToString() == MenuDataset.Ramune && MenuDataset.ItemCost.TryGetValue(MenuDataset.Ramune, out cost))
                 {
                     row.Cells[1].Value = double.Parse((string)row.Cells[1].Value + 1);
                     row.Cells[1].Value = double.Parse((string)row.Cells[1].Value) * cost;
                 }
             }
-            dataGridView1.Rows.Add("Ramune", "1", cost);
+            dataGridView1.Rows.Add(MenuDataset.Ramune, "1", cost);
             AddCost();
         }
 
         private void btnQoo_Click(object sender, EventArgs e)
         {
-            double cost = 1;
+            double cost = MenuDataset.ItemCost["Qoo"];
 
             foreach (DataGridViewRow row in dataGridView1.SelectedRows)
             {
-                if ((bool)(row.Cells[0].Value = "Qoo"))
+                if (row.Cells[0]?.Value?.ToString() == MenuDataset.Qoo && MenuDataset.ItemCost.TryGetValue(MenuDataset.Qoo, out cost))
                 {
                     row.Cells[1].Value = double.Parse((string)row.Cells[1].Value + 1);
                     row.Cells[1].Value = double.Parse((string)row.Cells[1].Value) * cost;
                 }
             }
-            dataGridView1.Rows.Add("Qoo", "1", cost);
+            dataGridView1.Rows.Add(MenuDataset.Qoo, "1", cost);
             AddCost();
         }
 
         private void btnLatte_Click(object sender, EventArgs e)
         {
-            double cost = 5.6;
+            double cost = MenuDataset.ItemCost["Matcha Latte"];
 
             foreach (DataGridViewRow row in dataGridView1.SelectedRows)
             {
-                if ((bool)(row.Cells[0].Value = "Matcha Latte"))
+                if (row.Cells[0]?.Value?.ToString() == MenuDataset.Matcha_Latte && MenuDataset.ItemCost.TryGetValue(MenuDataset.Matcha_Latte, out cost))
                 {
                     row.Cells[1].Value = double.Parse((string)row.Cells[1].Value + 1);
                     row.Cells[1].Value = double.Parse((string)row.Cells[1].Value) * cost;
                 }
             }
-            dataGridView1.Rows.Add("Matcha Latte", "1", cost);
+            dataGridView1.Rows.Add(MenuDataset.Matcha_Latte, "1", cost);
             AddCost();
         }
 
         private void btnTea_Click(object sender, EventArgs e)
         {
-            double cost = 1;
+            double cost = MenuDataset.ItemCost["Barley Tea"];
 
             foreach (DataGridViewRow row in dataGridView1.SelectedRows)
             {
-                if ((bool)(row.Cells[0].Value = "Barley Tea"))
+                if (row.Cells[0]?.Value?.ToString() == MenuDataset.Barley_Tea  // Equal to: row.Cells[0] != null && row.Cells[0].Value != null && row.Cells[0].Value..ToString() == "Barley Tea"
+                    && MenuDataset.ItemCost.TryGetValue(MenuDataset.Barley_Tea, out cost))
                 {
                     row.Cells[1].Value = double.Parse((string)row.Cells[1].Value + 1);
                     row.Cells[1].Value = double.Parse((string)row.Cells[1].Value) * cost;
                 }
             }
-            dataGridView1.Rows.Add("Barley Tea", "1", cost);
+            dataGridView1.Rows.Add(MenuDataset.Barley_Tea, "1", cost);
             AddCost();
         }
     }
