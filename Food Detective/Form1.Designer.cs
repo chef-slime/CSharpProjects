@@ -1,5 +1,4 @@
-﻿using System.Drawing;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 namespace Harmful_Ingredients_Search
 {
     partial class Form1

@@ -135,3 +135,36 @@ C:\Users\td130\OneDrive\Documents\Food Detective\Food Detective\obj\Debug\Harmfu
 C:\Users\td130\OneDrive\Documents\Food Detective\Food Detective\obj\Debug\Harmful Ingredients Search.csproj.CopyComplete
 C:\Users\td130\OneDrive\Documents\Food Detective\Food Detective\obj\Debug\Harmful Ingredients Search.exe
 C:\Users\td130\OneDrive\Documents\Food Detective\Food Detective\obj\Debug\Harmful Ingredients Search.pdb
+C:\Users\td130\OneDrive\Documents\GitHub\C-Sharp-Projects\Food Detective\bin\Debug\Harmful Ingredients Search.exe.config
+C:\Users\td130\OneDrive\Documents\GitHub\C-Sharp-Projects\Food Detective\bin\Debug\Harmful Ingredients Search.exe
+C:\Users\td130\OneDrive\Documents\GitHub\C-Sharp-Projects\Food Detective\bin\Debug\Harmful Ingredients Search.pdb
+C:\Users\td130\OneDrive\Documents\GitHub\C-Sharp-Projects\Food Detective\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\td130\OneDrive\Documents\GitHub\C-Sharp-Projects\Food Detective\bin\Debug\Npgsql.dll
+C:\Users\td130\OneDrive\Documents\GitHub\C-Sharp-Projects\Food Detective\bin\Debug\System.Buffers.dll
+C:\Users\td130\OneDrive\Documents\GitHub\C-Sharp-Projects\Food Detective\bin\Debug\System.Memory.dll
+C:\Users\td130\OneDrive\Documents\GitHub\C-Sharp-Projects\Food Detective\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\td130\OneDrive\Documents\GitHub\C-Sharp-Projects\Food Detective\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\td130\OneDrive\Documents\GitHub\C-Sharp-Projects\Food Detective\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\td130\OneDrive\Documents\GitHub\C-Sharp-Projects\Food Detective\bin\Debug\System.Text.Json.dll
+C:\Users\td130\OneDrive\Documents\GitHub\C-Sharp-Projects\Food Detective\bin\Debug\System.Threading.Channels.dll
+C:\Users\td130\OneDrive\Documents\GitHub\C-Sharp-Projects\Food Detective\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\td130\OneDrive\Documents\GitHub\C-Sharp-Projects\Food Detective\bin\Debug\System.ValueTuple.dll
+C:\Users\td130\OneDrive\Documents\GitHub\C-Sharp-Projects\Food Detective\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\td130\OneDrive\Documents\GitHub\C-Sharp-Projects\Food Detective\bin\Debug\Npgsql.xml
+C:\Users\td130\OneDrive\Documents\GitHub\C-Sharp-Projects\Food Detective\bin\Debug\System.Buffers.xml
+C:\Users\td130\OneDrive\Documents\GitHub\C-Sharp-Projects\Food Detective\bin\Debug\System.Memory.xml
+C:\Users\td130\OneDrive\Documents\GitHub\C-Sharp-Projects\Food Detective\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\td130\OneDrive\Documents\GitHub\C-Sharp-Projects\Food Detective\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\td130\OneDrive\Documents\GitHub\C-Sharp-Projects\Food Detective\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\td130\OneDrive\Documents\GitHub\C-Sharp-Projects\Food Detective\bin\Debug\System.Text.Json.xml
+C:\Users\td130\OneDrive\Documents\GitHub\C-Sharp-Projects\Food Detective\bin\Debug\System.Threading.Channels.xml
+C:\Users\td130\OneDrive\Documents\GitHub\C-Sharp-Projects\Food Detective\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\td130\OneDrive\Documents\GitHub\C-Sharp-Projects\Food Detective\bin\Debug\System.ValueTuple.xml
+C:\Users\td130\OneDrive\Documents\GitHub\C-Sharp-Projects\Food Detective\obj\Debug\Harmful Ingredients Search.csproj.AssemblyReference.cache
+C:\Users\td130\OneDrive\Documents\GitHub\C-Sharp-Projects\Food Detective\obj\Debug\Harmful_Ingredients_Search.Form1.resources
+C:\Users\td130\OneDrive\Documents\GitHub\C-Sharp-Projects\Food Detective\obj\Debug\Harmful_Ingredients_Search.Properties.Resources.resources
+C:\Users\td130\OneDrive\Documents\GitHub\C-Sharp-Projects\Food Detective\obj\Debug\Harmful Ingredients Search.csproj.GenerateResource.cache
+C:\Users\td130\OneDrive\Documents\GitHub\C-Sharp-Projects\Food Detective\obj\Debug\Harmful Ingredients Search.csproj.CoreCompileInputs.cache
+C:\Users\td130\OneDrive\Documents\GitHub\C-Sharp-Projects\Food Detective\obj\Debug\Harmful Ingredients Search.csproj.CopyComplete
+C:\Users\td130\OneDrive\Documents\GitHub\C-Sharp-Projects\Food Detective\obj\Debug\Harmful Ingredients Search.exe
+C:\Users\td130\OneDrive\Documents\GitHub\C-Sharp-Projects\Food Detective\obj\Debug\Harmful Ingredients Search.pdb
